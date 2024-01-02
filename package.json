@@ -1,0 +1,33 @@
+{
+  "name": "kaboom-extra",
+  "version": "0.1.0",
+  "description": "A package with Kaboom components, plugins,s etc",
+  "type": "module",
+  "main": "./dist/kaboom-extra.cjs",
+  "module": "./dist/kaboom-extra.mjs",
+  "types": "./dist/types.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/kaboom-extra.mjs",
+      "require": "./dist/kaboom-extra.cjs"
+    }
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node scripts/build.js",
+    "dts": "npx dts-bundle-generator -o dist/types.d.ts src/main.ts"
+  },
+  "author": "lajbel",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^20.10.4",
+    "esbuild": "^0.19.9",
+    "kaboom": "^3000.1.17"
+  },
+  "devDependencies": {
+    "dts-bundle-generator": "^9.2.1"
+  }
+}
