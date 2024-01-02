@@ -1,7 +1,7 @@
 {
   "name": "kaboom-extra",
-  "version": "0.1.0",
-  "description": "A package with Kaboom components, plugins,s etc",
+  "version": "0.1.1",
+  "description": "A package with Kaboom components, plugins, etc",
   "type": "module",
   "main": "./dist/kaboom-extra.cjs",
   "module": "./dist/kaboom-extra.mjs",
@@ -23,6 +23,7 @@
   },
   "author": "lajbel",
   "license": "MIT",
+  "keywords": ["kaboom", "kaboom.js", "kaboomjs", "game development", "games", "plugins"],
   "dependencies": {
     "@types/node": "^20.10.4",
     "esbuild": "^0.19.9",
