@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node scripts/build.js",
+    "build": "node scripts/build.js && npm run dts",
     "dts": "npx dts-bundle-generator -o dist/types.d.ts src/main.ts"
   },
   "author": "lajbel",
